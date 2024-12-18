@@ -1,0 +1,52 @@
+#skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  padding: 40px;
+  color: var(--white);
+  padding-top: 100px;
+  width: 100dvw;
+  min-height: 100dvh;
+  position: relative;
+}
+
+#skills article {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 40px;
+  text-align: center;
+  overflow: hidden;
+}
+
+#skills article figure > * {
+
+  transition: all 0.2s linear;
+}
+#skills article figure img {
+  height: 60px;
+  width: 60px;
+  cursor: pointer;
+  filter: grayscale(100%);
+}
+
+#skills article figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #50505049;
+  border-radius: 5px;
+  backdrop-filter: blur(1px);
+  padding: 20px;
+  gap: 20px;
+  cursor: pointer;
+  transition: all 0.2s linear;
+}
+#skills article figure:hover >  * {
+  transform: translateY(-15px);
+  filter: grayscale(0%);
+}
+
+

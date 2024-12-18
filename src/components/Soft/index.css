@@ -1,0 +1,66 @@
+#soft {
+  margin-top: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  flex-direction: row-reverse;
+  gap: 240px;
+  padding: 30px;
+  color: var(--white);
+  min-height: 100dvh;
+}
+
+
+#soft div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: fixed;
+  top: 50%;
+  left: 70%;
+  text-wrap: nowrap;
+  transform: translate(-50%);
+  transition: all .1s linear;
+  opacity: 0;
+}
+#soft h1 {
+  font-size: 50pt;
+}
+
+#soft span {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 20px;
+  width: 100%;
+  overflow: hidden;
+}
+#soft figure {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+  height: 250px;
+  background: #ffffff00;
+  border-radius: 10px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(20px);
+  border: 1px solid #ffffff48;
+  width: 450px;
+}
+
+#soft figure i {
+  display: flex;
+  gap: 4px;
+  font-size: 12px;
+}
+
+#soft figure i svg:first-of-type {
+  color: #fb6066;
+}
+#soft figure i svg:nth-of-type(2) {
+  color: #e6ae00;
+}
+#soft figure i svg:last-of-type {
+  color: #519548;
+}

@@ -1,0 +1,100 @@
+#about {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0 20px;
+}
+
+#about > * {
+  width: 50%;
+  color: var(--white);
+  font-size: 14pt;
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+
+#about > article{
+    width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  background-image: linear-gradient(80deg, #1473e0, #123bcd);
+    border-radius:  63% 37% 87% 13% / 30% 58% 42% 70% ;
+}
+#about  img {
+  width: 500px;
+}
+
+#about div {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+}
+
+#about h2 {
+  font-size: 42pt;
+  color: var(--blue);
+  position: relative;
+  width: 300px;
+  padding-bottom: 5px;
+}
+
+#about button {
+  width: 50%;
+  height: 45px;
+  font-size: 12pt;
+  background-image: linear-gradient(80deg, #1473e0, #123bcd);
+  color: var(--white);
+  border-radius: 6px;
+}
+
+#about button:last-of-type{
+  background-image: linear-gradient(80deg, #67c1fc, #4dafe9);
+  color: var(--white);
+}
+
+#about aside > p {
+  line-height: 28px;
+  background: #ffffff00;
+  border-radius: 10px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  border: 1px solid #ffffff48;
+    padding: 40px 20px;
+    position: relative;
+    border: solid var(--gray) 1px;
+}
+
+#about aside > p span{
+  position: absolute;
+  top: 10px;
+  display: flex;
+  gap: 4px;
+  font-size: 12px;
+}
+
+#about aside > p span svg:first-of-type{
+  color: #fb6066
+}
+#about aside > p span svg:nth-of-type(2){
+  color:#e6ae00
+}
+#about aside > p span svg:last-of-type{
+  color:#519548
+}
+#about aside{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    position: relative;
+}
+
+#about aside > svg{
+    position: absolute;
+    font-size: 30pt;
+    left: 300px;
+}

@@ -1,0 +1,180 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+#app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100dvh;
+  width: 100dvw;
+  background-image: url("./assets/bg.jpeg");
+  background-size: 100%;
+  background-attachment: fixed;
+}
+#app footer {
+  width: 100%;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  background: #ffffff00;
+  border-radius: 10px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(20px);
+}
+
+#app > section {
+  min-height: 100dvh;
+  width: 100dvw;
+}
+small {
+  color: var(--blue);
+  font-size: 14pt;
+}
+
+#app > section > h1 {
+  font-size: 32pt;
+}
+
+/*Home*/
+#app > section:first-of-type {
+  width: 100%;
+  display: flex;
+  min-height: 100dvh;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: var(--white);
+  gap: 20px;
+  padding: 0 20px;
+}
+
+#app > section:first-of-type h1 {
+  font-size: 90pt;
+  text-align: center;
+}
+#app > section:first-of-type h2 {
+  font-size: 22pt;
+  border-right: 3px solid var(--white);
+  text-transform: uppercase;
+  width: 420px;
+  animation: typing 3s steps(23) infinite alternate,
+    blink 0.5s step-end infinite alternate;
+  text-wrap: nowrap;
+}
+#app > section:first-of-type ul, #app > footer ul {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+#app > section:first-of-type ul a , #app > footer a {
+  height: 50px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--blue);
+  background-color: var(--gray);
+  border-radius: 10px;
+  font-size: 20pt;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+#app > section:first-of-type ul a:hover , #app > footer a:hover {
+  color: var(--white);
+}
+@keyframes typing {
+  from {
+    width: 0%;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+#app > section:first-of-type span {
+  font-size: 20pt;
+}
+
+#app a:active,
+#app button:active {
+  scale: 0.7;
+}
+
+#app a {
+  text-decoration: none;
+  color: var(--white);
+  transition: all 0.5s linear;
+}
+#app > header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  display: flex;
+  align-items: center;
+  height: 70px;
+  transition: all 0.1s linear;
+  z-index: 9999999999999999;
+}
+#app > header nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+  padding: 0 20px;
+}
+
+#app > header nav ul {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+button {
+  border: none;
+  transition: all 0.5s linear;
+  cursor: pointer;
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+#app > header ul a:last-of-type {
+  border: none;
+  transition: all 0.5s linear;
+  cursor: pointer;
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 120px;
+  border-radius: 30px;
+  color: var(--white);
+  background-image: linear-gradient(80deg, #1473e0, #123bcd);
+}
+
+#app > header.blur {
+  background-color: transparent;
+  backdrop-filter: blur(15px);
+}
+
+@keyframes animateText {
+  from {
+    background-size: 0%;
+  }
+  to {
+    background-size: 100%;
+  }
+}
