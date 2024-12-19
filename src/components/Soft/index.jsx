@@ -53,8 +53,11 @@ export default function Soft() {
    <section id="soft">
      <div id="MysSoftsSkill">
        <small>Minhas softSkills</small>
-       <h1>Minhas softSkills</h1>
+       <h2>Minhas softSkills</h2>
      </div>
+
+     <small>Minhas softSkills</small>
+     <h2>Minhas softSkills</h2>
      <span>
        {softskils.map((soft, index) => (
          <figure

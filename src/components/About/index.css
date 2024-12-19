@@ -1,11 +1,11 @@
-#about {
+#aboutme {
   display: flex;
   align-items: center;
   justify-content: space-around;
   padding: 0 20px;
 }
 
-#about > * {
+#aboutme > * {
   width: 50%;
   color: var(--white);
   font-size: 14pt;
@@ -15,27 +15,26 @@
   gap: 10px;
 }
 
-
-#about > article{
-    width: 600px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+#aboutme > article {
+  width: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-image: linear-gradient(80deg, #1473e0, #123bcd);
-    border-radius:  63% 37% 87% 13% / 30% 58% 42% 70% ;
+  border-radius: 63% 37% 87% 13% / 30% 58% 42% 70%;
 }
-#about  img {
+#aboutme img {
   width: 500px;
 }
 
-#about div {
+#aboutme div {
   display: flex;
   align-items: center;
   gap: 20px;
   width: 100%;
 }
 
-#about h2 {
+#aboutme h2 {
   font-size: 42pt;
   color: var(--blue);
   position: relative;
@@ -43,7 +42,7 @@
   padding-bottom: 5px;
 }
 
-#about button {
+#aboutme button {
   width: 50%;
   height: 45px;
   font-size: 12pt;
@@ -52,24 +51,23 @@
   border-radius: 6px;
 }
 
-#about button:last-of-type{
+#aboutme button:last-of-type {
   background-image: linear-gradient(80deg, #67c1fc, #4dafe9);
-  color: var(--white);
 }
 
-#about aside > p {
+#aboutme aside > p {
   line-height: 28px;
   background: #ffffff00;
   border-radius: 10px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(5px);
   border: 1px solid #ffffff48;
-    padding: 40px 20px;
-    position: relative;
-    border: solid var(--gray) 1px;
+  padding: 40px 20px;
+  position: relative;
+  border: solid var(--gray) 1px;
 }
 
-#about aside > p span{
+#aboutme aside > p span {
   position: absolute;
   top: 10px;
   display: flex;
@@ -77,24 +75,70 @@
   font-size: 12px;
 }
 
-#about aside > p span svg:first-of-type{
-  color: #fb6066
+#aboutme aside > p span svg:first-of-type {
+  color: #fb6066;
 }
-#about aside > p span svg:nth-of-type(2){
-  color:#e6ae00
+#aboutme aside > p span svg:nth-of-type(2) {
+  color: #e6ae00;
 }
-#about aside > p span svg:last-of-type{
-  color:#519548
+#aboutme aside > p span svg:last-of-type {
+  color: #519548;
 }
-#about aside{
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    position: relative;
+#aboutme aside {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 
-#about aside > svg{
-    position: absolute;
-    font-size: 30pt;
-    left: 300px;
+#aboutme aside > svg {
+  position: absolute;
+  font-size: 30pt;
+  left: 300px;
+}
+#aboutme aside {
+  position: relative;
+}
+@media screen and (max-width: 1024px) and (min-width: 719px) {
+  #aboutme {
+    flex-direction: column-reverse;
+  }
+  #aboutme aside {
+    width: 100%;
+    gap: 40px;
+    margin-top: 100px;
+  }
+
+  #aboutme > article {
+    margin-top: 40px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  #aboutme {
+    padding: 0 10px;
+    flex-direction: column-reverse;
+  }
+
+  #aboutme aside {
+    width: 100%;
+    gap: 10px;
+    margin-top: 100px;
+  }
+
+  #aboutme aside > svg {
+    font-size: 25pt;
+    left: 240px;
+  }
+
+  #aboutme h2 {
+    font-size: 35pt;
+  }
+
+  #aboutme > article {
+    width: 300px;
+    margin-top: 40px;
+  }
+  #aboutme img {
+    width: 280px;
+  }
 }

@@ -17,7 +17,7 @@ export default function Service() {
         id: 2,
         title: "Desenvolvimento Backend & API",
         description:
-          "Desenvolvimento da lógica de negócios, APIs e gerenciamento de dados utilizando linguagens como  Node.js & Java.",
+          "Desenvolvimento da lógica de negócios, APIs e gerenciamento de dados utilizando linguagens como  Node.js & Java  e padrões Rest , GrathQl e WebSocket.",
         icon: <CiServer />,
       },
       {
@@ -41,7 +41,14 @@ export default function Service() {
           "Desenvolvimento de aplicativos mobile para Android e iOS a partir de um único código-fonte utilizando tecnologias como React Native.",
         icon: <HiMiniDevicePhoneMobile />,
       },
-  ];
+      {
+        id: 6,
+        title: "Desenvolvimento FullStack",
+        description:
+          "Desenvolvimento de aplicativos mobile ,  desktop  e web de ponta á ponta com leyauts totalmente elegantes e responsivos utilizando a minha Stack",
+        icon: <FaCode />,
+      },
+    ];
 
   return (
     <section id="services">
@@ -49,7 +56,7 @@ export default function Service() {
       <h1 data-aos="fade-right">Meus Serviços</h1>
       <article>
         {services.map((service, index) => (
-          <figure key={index} data-aos="flip-left">
+          <figure key={index} data-aos="fade-left">
             {service.icon}
             <h2>{service.title}</h2>
             <p>{service.description}</p>

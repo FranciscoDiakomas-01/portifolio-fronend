@@ -30,9 +30,12 @@ export default function Home() {
       <h2>Desenvolvedor FullStack</h2>
       <ul>
         {links.map((link, index) => (
-          <a key={index} href={link.url} target="_blank">{link.icon}</a>
+          <a key={index} href={link.url} target="_blank">
+            {link.icon}
+          </a>
         ))}
       </ul>
+      <a href="#contact">Contacte-me</a>
     </section>
   );
 }

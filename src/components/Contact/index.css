@@ -27,35 +27,31 @@
     width: 80%;
 }
 
-#contact  article > * {
-    width: 40%;
-}
-
-#contact  article > aside{
+#contact  > aside{
     display: flex;
-    flex-direction: column;
     gap: 40px;
     height: 100%;
+    width: 100%;
     align-items: center;
     justify-content: center;
-    place-self: center;
+    margin-top: 40px;
+    flex-wrap: wrap;
 }
 
-#contact  article > aside span{
+#contact   > aside span{
     display: flex;
     gap: 40px;
-    width: 100%;
 
 }
 
-#contact  article > aside span aside{
+#contact  > aside span aside{
     display: flex;
     align-items: start;
     gap: 10px;
     flex-direction: column;
 }
 
-#contact  article > aside div{
+#contact  > aside div{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -97,7 +93,7 @@
     flex-direction: column;
     gap: 30px;
     padding:10px;
-    width: 70%;
+    width: 100%;
 }
 
 #contact  article form input , #contact  article form textarea{
@@ -112,7 +108,7 @@
     outline :none;
 }
 #contact  article form textarea{
-    height: 150px;
+    height: 200px;
     padding: 10px;
 }
 #contact  article form > div{
@@ -127,6 +123,79 @@
   background-image: linear-gradient(80deg, #1473e0, #123bcd);
   color: var(--white);
   border-radius: 20px;
-  width: 70%;
+  width: 250px;
   place-self: center;
+}
+
+
+@media screen and (max-width : 1024px) and (min-width : 721px){
+ #contact  article{
+    flex-direction: column;
+    width: 100%;
+}
+#contact  article form{
+    width: 100%;
+}
+#contact  article > aside{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    width: 100%;
+    padding-top: 20px;
+}
+}
+
+
+@media screen and (max-width : 720px){
+
+#contact{
+    color: var(--white);
+    padding: 20px;
+    text-wrap: nowrap;
+}
+
+
+#contact   > aside span{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+
+}
+#contact  article form > div{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+ #contact  article{
+    margin-top: 30px;
+    gap: 20px;
+    color: var(--white);
+    padding : 40px 10px;
+    justify-content: space-between;
+    position: relative;
+    width: 100%;
+    flex-direction: column;
+}
+#contact  article form{
+    width: 100%;
+    padding: 0;
+}
+
+
+#contact  article  h1{
+    font-size: 20pt;
+    margin-top: 40px;
+}
+
+#contact  > aside{
+    align-items: start;
+    justify-content: start;
+    gap: 10px;
+}
+
+#contact  > aside span aside{
+    flex-direction: row;
+}
+
 }

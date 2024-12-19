@@ -42,7 +42,7 @@ small {
 }
 
 /*Home*/
-#app > section:first-of-type {
+#app > #home {
   width: 100%;
   display: flex;
   min-height: 100dvh;
@@ -54,11 +54,11 @@ small {
   padding: 0 20px;
 }
 
-#app > section:first-of-type h1 {
+#app > #home h1 {
   font-size: 90pt;
   text-align: center;
 }
-#app > section:first-of-type h2 {
+#app > #home h2 {
   font-size: 22pt;
   border-right: 3px solid var(--white);
   text-transform: uppercase;
@@ -67,13 +67,13 @@ small {
     blink 0.5s step-end infinite alternate;
   text-wrap: nowrap;
 }
-#app > section:first-of-type ul, #app > footer ul {
+#app > #home ul, #app > footer ul {
   display: flex;
   gap: 20px;
   align-items: center;
 }
 
-#app > section:first-of-type ul a , #app > footer a {
+#app > #home ul a , #app > footer a {
   height: 50px;
   width: 50px;
   display: flex;
@@ -87,7 +87,7 @@ small {
   cursor: pointer;
 }
 
-#app > section:first-of-type ul a:hover , #app > footer a:hover {
+#app > #home ul a:hover , #app > footer a:hover {
   color: var(--white);
 }
 @keyframes typing {
@@ -101,7 +101,7 @@ small {
     border-color: transparent;
   }
 }
-#app > section:first-of-type span {
+#app > #home span {
   font-size: 20pt;
 }
 
@@ -118,12 +118,12 @@ small {
 #app > header {
   position: fixed;
   width: 100%;
-  top: 0;
+  top: -10px;
   display: flex;
   align-items: center;
   height: 70px;
   transition: all 0.1s linear;
-  z-index: 9999999999999999;
+  z-index: 9999;
 }
 #app > header nav {
   width: 100%;
@@ -149,8 +149,10 @@ button {
   align-items: center;
   justify-content: center;
   gap: 10px;
+  background-image: linear-gradient(80deg, #1473e0, #123bcd);
+  color: var(--white);
 }
-#app > header ul a:last-of-type {
+#app > header ul a:last-of-type , #mobileNav a:last-of-type , #home > a:last-of-type{
   border: none;
   transition: all 0.5s linear;
   cursor: pointer;
@@ -159,10 +161,22 @@ button {
   align-items: center;
   justify-content: center;
   gap: 10px;
-  width: 120px;
+  width: 130px;
   border-radius: 30px;
   color: var(--white);
   background-image: linear-gradient(80deg, #1473e0, #123bcd);
+}
+
+#home > a:last-of-type{
+  width: 250px;
+  height: 60px;
+  font-size: 14pt;
+}
+#app > header svg{
+  font-size: 20pt;
+  color: var(--white);
+  font-weight: bold;
+  display: none;
 }
 
 #app > header.blur {
@@ -177,4 +191,76 @@ button {
   to {
     background-size: 100%;
   }
+}
+
+#mobileNav.open{
+  height: 101dvh;
+  padding-top: 90px;
+}
+#mobileNav{
+  position: fixed;
+  display: none;
+  flex-direction: column;
+  width: 100%;
+  height: 0dvh;
+  background: #ffffff00;
+  border-radius: 10px;
+  backdrop-filter: blur(30px);
+  z-index: 9999999999999999;
+  align-items: center;
+  padding-top: 0px;
+  gap: 20px;
+  font-size: 14pt;
+  bottom: 0;
+  transition: all .5s linear;
+  overflow: hidden;
+  text-wrap: nowrap;
+}
+#mobileNav a:last-of-type{
+  width: 200px;
+}
+
+
+@media screen and (max-width : 1024px) and (min-width : 721px){
+  #app > header nav ul {
+    display: none;
+  }
+  #app > header svg{
+   display: block;
+  }
+#mobileNav{
+  display: flex;
+}
+}
+
+
+@media screen and (max-width : 720px){
+
+  #home > a:last-of-type{
+  width: 150px;
+  height: 40px;
+  font-size: 11pt;
+}
+  #app > header nav ul {
+    display: none;
+  }
+  #app > header svg{
+   display: block;
+  }
+#mobileNav{
+  display: flex;
+}
+  #app > #home h1 {
+    font-size: 45pt;
+    text-align: center;
+  }
+
+  #app > #home h2 {
+  font-size: 15pt;
+  width: 325px;
+}
+
+#app footer{
+  text-align: center;
+}
 }

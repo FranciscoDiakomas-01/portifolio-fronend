@@ -29,20 +29,9 @@ export default function Contact() {
           <FaCircle />
           <FaCircle />
         </i>
-        <aside data-aos="zoom-in-left">
-          {contact.map((cont, index) => (
-            <span key={index}>
-              <div>{cont.icon}</div>
-              <aside>
-                <small>{cont.name}</small>
-                <h3>{cont.desciption}</h3>
-              </aside>
-            </span>
-          ))}
-        </aside>
 
         <form data-aos="fade-left">
-          <h1>Borá Trabalhar Juntos!</h1>
+          <h1>Vamos Trabalhar Juntos!</h1>
           <div>
             <input placeholder="Entre com seu nome" required />
             <input placeholder="Entre com seu email" type="email" required />
@@ -56,6 +45,18 @@ export default function Contact() {
           </button>
         </form>
       </article>
+
+      <aside data-aos="zoom-in-left">
+        {contact.map((cont, index) => (
+          <span key={index}>
+            <div>{cont.icon}</div>
+            <aside>
+              <small>{cont.name}</small>
+              <h3>{cont.desciption}</h3>
+            </aside>
+          </span>
+        ))}
+      </aside>
     </section>
   );
 }

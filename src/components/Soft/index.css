@@ -23,7 +23,7 @@
   transition: all .1s linear;
   opacity: 0;
 }
-#soft h1 {
+#soft div > h2 {
   font-size: 50pt;
 }
 
@@ -40,13 +40,17 @@
   flex-direction: column;
   gap: 10px;
   padding: 20px;
-  height: 250px;
+  min-height: 250px;
   background: #ffffff00;
   border-radius: 10px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(20px);
   border: 1px solid #ffffff48;
   width: 450px;
+}
+
+#soft figure *{
+  overflow: hidden;
 }
 
 #soft figure i {
@@ -63,4 +67,59 @@
 }
 #soft figure i svg:last-of-type {
   color: #519548;
+}
+#soft > h2 ,#soft > small {
+  display: none;
+}
+
+
+@media screen and (max-width : 1024px) and (min-width : 721px){
+#soft div > h2 {
+  font-size: 30pt;
+}
+#soft div {
+  left: 78%;
+}
+
+
+
+#soft figure {
+  min-height: 320px;
+  width: 55%;
+}
+
+}
+
+@media screen and (max-width : 720px){
+  #soft > h2 {
+  font-size: 20pt;
+  text-align: center;
+}
+#soft div {
+  display: none;
+}
+
+#soft {
+  margin-top: 100px;
+  flex-direction: column;
+  width: 100dvw;
+  gap: 0px;
+  padding: 10px;
+}
+
+#soft > h1 ,#soft > small {
+  text-align: center;
+  display: flex;
+  place-self: center;
+}
+
+#soft figure {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+  height: 320px;
+  width: 100%;
+}
+
 }

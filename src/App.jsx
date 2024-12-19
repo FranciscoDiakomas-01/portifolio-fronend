@@ -2,13 +2,15 @@ import './App.css'
 import About from './components/About';
 import Header from './components/Header';
 import Home from './components/Home';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import Service from './components/Service';
 import Skills from './components/Skills';
 import Soft from './components/Soft';
 import AOS from "aos";
 import Contact from './components/Contact';
 import { FaFacebook, FaInstagram, FaGithub, FaWhatsapp } from "react-icons/fa";
+import Projects from './components/Projects';
+import SplashScrenn from './components/SplashScrenn';
 export function App() {
   const links = [
     {
@@ -32,12 +34,13 @@ export function App() {
       url: "https://wa.me/957777993?text=Quero%20Entrar%20em%20contacto%20consigo%20para%20trabalho",
     },
   ];
+  const [isLoad , setLOad] = useState(true);
   useEffect(() => {
      AOS.init({
        duration: 800,
        easing: "ease-in-out",
        once: false,
-       offset: 100
+       offset: 50
      });
     document.addEventListener("scroll", () => {
       
@@ -47,27 +50,40 @@ export function App() {
       }
       document.getElementById("header").classList.remove("blur");
     })
+    setTimeout(() => {
+      document.getElementById("spash").classList.add("open");
+    }, 2000)
+    setTimeout(() => {
+       setLOad(false)
+     }, 2500);
     
-  },[])
+  }, [])
   return (
     <main id="app">
-      <Header />
-      <Home />
-      <About />
-      <Service />
-      <Skills />
-      <Soft />
-      <Contact />
-      <footer>
-        <p>Francisco Lombo Diakomas &copy; || Todos Direitos Reservados </p>
-        <ul>
-          {links.map((link, index) => (
-            <a key={index} href={link.url} target="_blank">
-              {link.icon}
-            </a>
-          ))}
-        </ul>
-      </footer>
+      {isLoad ? (
+        <SplashScrenn />
+      ) : (
+        <>
+          <Header />
+          <Home />
+          <About />
+          <Service />
+          <Skills />
+          <Soft />
+          <Projects />
+          <Contact />
+          <footer>
+            <p>Francisco Lombo Diakomas &copy; || Todos Direitos Reservados </p>
+            <ul>
+              {links.map((link, index) => (
+                <a key={index} href={link.url} target="_blank">
+                  {link.icon}
+                </a>
+              ))}
+            </ul>
+          </footer>
+        </>
+      )}
     </main>
   );
 }

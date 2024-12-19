@@ -44,9 +44,52 @@
   cursor: pointer;
   transition: all 0.2s linear;
 }
+
+#skills > h2{
+  text-wrap: nowrap;
+  font-size: 37pt;
+}
+
 #skills article figure:hover >  * {
   transform: translateY(-15px);
   filter: grayscale(0%);
 }
+@media screen and (max-width : 1024px) and (min-width : 721px){
+#skills article {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+}
 
+
+
+@media screen and (max-width : 720px){
+  #skills {
+    gap: 20px;
+  }
+#skills article {
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+#skills > h2{
+  text-wrap: nowrap;
+  font-size: 20pt;
+}
+#skills article figure {
+  padding: 12px;
+  gap: 10px;
+}
+#skills {
+  padding: 10px;
+}
+#skills > h1{
+  text-wrap: nowrap;
+  font-size: 2pt;
+}
+
+#skills article figure img {
+  height: 45px;
+  width: 45px;
+}
+}
 

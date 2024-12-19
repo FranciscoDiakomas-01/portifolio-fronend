@@ -1,0 +1,40 @@
+#spash{
+    width: 100dvw;
+    height: 100dvh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#spash article{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 50%;
+    background: #ffffff00;
+    border-radius: 4px;
+    backdrop-filter: blur(5px);
+    transition: all .5s linear;
+}
+
+#spash aside{
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 50%;
+    background: #ffffff00;
+    border-radius: 4px;
+    backdrop-filter: blur(5px);
+    transition: all .5s linear;
+}
+
+#spash.open aside , #spash.open article{
+    width: 0%;
+}
+
+

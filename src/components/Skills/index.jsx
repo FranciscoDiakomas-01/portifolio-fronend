@@ -1,17 +1,19 @@
 import './index.css'
-import html from '../../assets/html-5.png'
-import css from "../../assets/css-3.png";
-import nodejs from '../../assets/node.png'
-import react from '../../assets/react.png'
-import js from '../../assets/js.png'
-import typescript from '../../assets/typescript.png'
-import express from '../../assets/Express.png'
-import eletron from '../../assets/Electron.png'
-import PostGres from '../../assets/postgre.png'
-import git from "../../assets/Git.png";
-import Java from "../../assets/java.png";
-import spring from "../../assets/Spring.png";
-import grath from "../../assets/GraphQL.png";
+import html from '../../assets/HTML5.svg'
+import css from "../../assets/CSS3.svg";
+import nodejs from '../../assets/Node.js.svg'
+import react from '../../assets/React.svg'
+import js from '../../assets/JavaScript.svg'
+import typescript from '../../assets/TypeScript.svg'
+import express from '../../assets/Express.svg'
+import eletron from '../../assets/Electron.svg'
+import PostGres from '../../assets/PostgresSQL.svg'
+import git from "../../assets/Git.svg";
+import Java from "../../assets/Java.svg";
+import spring from "../../assets/Spring.svg";
+import grath from "../../assets/GraphQL.svg";
+import nextjs from "../../assets/Next.js.svg";
+import mongodb from "../../assets/MongoDB.svg";
 import { useState } from 'react';
 export default function Skills() {
   const [active , setActive] = useState(1)
@@ -86,18 +88,27 @@ export default function Skills() {
         id: 48,
         name: "GrathQL",
         image: grath,
+      } ,{
+        id: 148,
+        name: "Next JS",
+        image: nextjs,
+      },
+      {
+        id: 448,
+        name: "Mongoose JS",
+        image: mongodb,
       }
     ];
 
  return (
    <section id="skills">
      <small data-aos="fade-left">Minhas hardSkills</small>
-     <h1 data-aos="fade-right">Minhas Habilidades</h1>
+     <h2 data-aos="fade-right">Minhas Habilidades</h2>
      <article>
        {skills.map((skill, index) => (
          <figure
            key={index}
-           data-aos="flip-left"
+           data-aos="fade-left"
            onClick={() => {
              setActive(skill.id);
            }}
