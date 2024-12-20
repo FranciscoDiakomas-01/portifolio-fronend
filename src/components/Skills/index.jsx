@@ -14,6 +14,7 @@ import spring from "../../assets/Spring.svg";
 import grath from "../../assets/GraphQL.svg";
 import nextjs from "../../assets/Next.js.svg";
 import mongodb from "../../assets/MongoDB.svg";
+import taiwind from "../../assets/Tailwind-CSS.svg";
 import { useState } from 'react';
 export default function Skills() {
   const [active , setActive] = useState(1)
@@ -88,7 +89,8 @@ export default function Skills() {
         id: 48,
         name: "GrathQL",
         image: grath,
-      } ,{
+      },
+      {
         id: 148,
         name: "Next JS",
         image: nextjs,
@@ -97,7 +99,12 @@ export default function Skills() {
         id: 448,
         name: "Mongoose JS",
         image: mongodb,
-      }
+      },
+      {
+        id: 444,
+        name: "Tailwind Css",
+        image: taiwind,
+      },
     ];
 
  return (
