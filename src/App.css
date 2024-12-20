@@ -261,9 +261,10 @@ button {
   }
 
   #app > #home h2 {
-  font-size: 12pt;
-  width: auto;
+  font-size: 11pt;
+  width:200px;
   text-wrap: nowrap;
+  overflow : hidden
 }
 
 #app footer{
