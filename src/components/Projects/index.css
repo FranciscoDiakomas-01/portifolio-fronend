@@ -1,5 +1,4 @@
 
-
 #projects{
     width: 100dvw;
     display: flex;
@@ -24,7 +23,6 @@
     font-size: 12pt;
 }
 #projects > div  button:last-of-type{
-  background-image: linear-gradient(80deg, #262728, #464646);
 
 }
 #projects > article{
@@ -60,9 +58,10 @@ article > figure > div{
     position: relative;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 5px;
     align-items: center;
     transition: all .2s linear;
+    min-width:300px
 }
 
 
@@ -77,11 +76,9 @@ article > figure > div{
 }
 
 #projects > article figure figcaption{
-
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    padding: 10px 0;
+    gap: 5px;
 }
 #projects > article figure figcaption aside{
     width: 100%;
@@ -119,10 +116,9 @@ article > figure > div{
     border-radius: 20px;
 }
 #projects > article figure #repo{
-    
     background: #ffffff00;
     backdrop-filter: blur(20px);
-    border: 1px solid #ffffff48;
+    background-image: linear-gradient(80deg, #262728, #464646);
 }
 #projects > article figure i svg:first-of-type {
   color: #fb6066;
@@ -140,8 +136,12 @@ article > figure > div{
     
 #projects > article{
     grid-template-columns: 1fr 1fr;
-    gap: 20px;
+    gap: 10px;
 }
+#projects > article figure{
+    min-width :auto
+}
+
 
 }
 
@@ -152,6 +152,9 @@ article > figure > div{
     padding:  20px;
     gap: 20px;
     margin-top: -20px;
+}
+#projects > article figure{
+    min-width :auto
 }
 
 #projects > article figure div button{

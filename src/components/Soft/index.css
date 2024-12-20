@@ -107,7 +107,7 @@
   padding: 10px;
 }
 
-#soft > h1 ,#soft > small {
+#soft > h2 ,#soft > small {
   text-align: center;
   display: flex;
   place-self: center;

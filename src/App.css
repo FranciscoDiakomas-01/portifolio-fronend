@@ -62,7 +62,7 @@ small {
   font-size: 22pt;
   border-right: 3px solid var(--white);
   text-transform: uppercase;
-  width: 420px;
+  width: 500px;
   animation: typing 3s steps(23) infinite alternate,
     blink 0.5s step-end infinite alternate;
   text-wrap: nowrap;

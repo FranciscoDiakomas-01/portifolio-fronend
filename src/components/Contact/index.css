@@ -75,7 +75,7 @@
 #contact  i svg:nth-of-type(2) {
   color: #e6ae00;
 }
-#contact i svg {
+#contact i svg , #contact  #res {
   color: #519548;
 }
 
@@ -125,8 +125,13 @@
   border-radius: 20px;
   width: 250px;
   place-self: center;
+  position : relative;
+  overflow : hidden
 }
-
+#contact button #loader span{
+    height : 25px;
+    width : 25px
+}
 
 @media screen and (max-width : 1024px) and (min-width : 721px){
  #contact  article{

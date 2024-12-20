@@ -11,6 +11,7 @@ import Contact from './components/Contact';
 import { FaFacebook, FaInstagram, FaGithub, FaWhatsapp } from "react-icons/fa";
 import Projects from './components/Projects';
 import SplashScrenn from './components/SplashScrenn';
+import { ToastContainer } from 'react-toastify';
 export function App() {
   const links = [
     {
@@ -51,7 +52,7 @@ export function App() {
       document.getElementById("header").classList.remove("blur");
     })
     setTimeout(() => {
-      document.getElementById("spash").classList.add("open");
+      document.getElementById("spash")?.classList.add("open");
     }, 2000)
     setTimeout(() => {
        setLOad(false)
@@ -60,6 +61,9 @@ export function App() {
   }, [])
   return (
     <main id="app">
+      <ToastContainer style={{
+        zIndex : '9999999999999999999999999999999999'
+      }}/>
       {isLoad ? (
         <SplashScrenn />
       ) : (
