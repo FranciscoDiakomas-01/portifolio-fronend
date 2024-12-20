@@ -262,7 +262,7 @@ button {
 
   #app > #home h2 {
   font-size: 11pt;
-  width:200px;
+  width:400px;
   text-wrap: nowrap;
   overflow : hidden
 }
