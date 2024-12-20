@@ -84,12 +84,6 @@ export default function Projects() {
            </figure>
          ))}
      </article>
-     <div>
-       <button>
-         Ver mais
-         <FaPaperPlane />
-       </button>
-     </div>
    </section>
  );
 }
