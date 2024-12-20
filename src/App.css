@@ -261,8 +261,9 @@ button {
   }
 
   #app > #home h2 {
-  font-size: 15pt;
-  width: 325px;
+  font-size: 12pt;
+  width: auto;
+  text-wrap: nowrap;
 }
 
 #app footer{
