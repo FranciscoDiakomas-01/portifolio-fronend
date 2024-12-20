@@ -62,9 +62,9 @@ small {
   font-size: 22pt;
   border-right: 3px solid var(--white);
   text-transform: uppercase;
-  width: 500px;
+  width: 470px;
   animation: typing 3s steps(23) infinite alternate,
-    blink 0.5s step-end infinite alternate;
+  blink 0.5s step-end infinite alternate;
   text-wrap: nowrap;
 }
 #app > #home ul, #app > footer ul {
@@ -205,7 +205,7 @@ button {
   height: 0dvh;
   background: #ffffff00;
   border-radius: 10px;
-  backdrop-filter: blur(30px);
+  backdrop-filter: blur(40px);
   z-index: 9999999999999999;
   align-items: center;
   padding-top: 0px;
@@ -247,8 +247,13 @@ button {
   #app > header svg{
    display: block;
   }
+
 #mobileNav{
   display: flex;
+  background: #ffffff00;
+  border-radius: 10px;
+  backdrop-filter: blur(40px);
+  z-index: 9999999999999999;
 }
   #app > #home h1 {
     font-size: 45pt;
