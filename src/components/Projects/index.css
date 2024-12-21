@@ -22,9 +22,7 @@
     border-radius: 8px;
     font-size: 12pt;
 }
-#projects > div  button:last-of-type{
 
-}
 #projects > article{
     margin-top: 30px;
     display: grid;
@@ -89,10 +87,7 @@ article > figure > div{
     flex-wrap: wrap;
 }
 
-#projects > article figure figcaption p:nth-last-of-type(2){
-    display: flex;
-    align-items: center;
-    gap: 3px;
+#projects > article figure figcaption p:last-of-type{
     color: var(--blue);
 }
 #projects > article figure figcaption aside span{

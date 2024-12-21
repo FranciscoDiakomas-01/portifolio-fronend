@@ -1,10 +1,7 @@
 import OpenUrl from '../../util/openUrl';
 import './index.css'
 import { FaCircle, FaGithub, FaPaperPlane } from 'react-icons/fa';
-import { FaDesktop } from "react-icons/fa";
 import './index.css'
-import { HiMiniDevicePhoneMobile } from "react-icons/hi2";
-import { CiServer } from "react-icons/ci"
 import { useEffect, useState } from 'react';
 import getProjects from '../../services/getProjects';
 export default function Projects() {
@@ -41,21 +38,11 @@ export default function Projects() {
              </div>
              <figcaption>
                <p>{project.description}</p>
-               <p>
-                 {String(project.category).startsWith("F") ||
-                 String(project.category).startsWith("D")? (
-                   <FaDesktop />
-                 ) : String(project.category).startsWith("B") ?(
-                   <CiServer />
-                 ) : (
-                   <HiMiniDevicePhoneMobile />
-                 )}
-                 {project.category}
-               </p>
+               
                <p>Tecnologias Usadas</p>
                <aside>
-                 {project.tecnologies &&
-                   project.tecnologies.map((tec, index) => (
+                 {project.technologies &&
+                   project.technologies.map((tec, index) => (
                      <span key={index}>{tec}</span>
                    ))}
                </aside>
