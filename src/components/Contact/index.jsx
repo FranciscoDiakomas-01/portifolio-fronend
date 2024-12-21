@@ -36,17 +36,16 @@ export default function Contact() {
 
   async function handleOnSubmit(e) {
     e.preventDefault();
+    setLoad(true);
     const response = await SendMessage(user);
     if (response) {
-      
-      setLoad(true);
       setUser({ name: "", tel: "", email: "", subject: "", msg: "" });
       setTimeout(() => {
         setLoad(false);
       }, 2000);
       return;
     } else {
-      console.log(response)
+      setLoad(false);
       toast.info("Dados inválidos!" , {theme : 'dark'})
     }
   }
