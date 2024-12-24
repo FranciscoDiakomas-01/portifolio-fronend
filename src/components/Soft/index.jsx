@@ -52,7 +52,7 @@ export default function Soft() {
  return (
    <section id="soft">
      <div id="MysSoftsSkill">
-       <small>Minhas softSkills</small>
+       <small>Habilidades interpessoais</small>
        <h2>Minhas softSkills</h2>
      </div>
 

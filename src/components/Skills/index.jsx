@@ -9,11 +9,8 @@ import express from '../../assets/Express.svg'
 import eletron from '../../assets/Electron.svg'
 import PostGres from '../../assets/PostgresSQL.svg'
 import git from "../../assets/Git.svg";
-import Java from "../../assets/Java.svg";
-import spring from "../../assets/Spring.svg";
 import grath from "../../assets/GraphQL.svg";
 import nextjs from "../../assets/Next.js.svg";
-import mongodb from "../../assets/MongoDB.svg";
 import taiwind from "../../assets/Tailwind-CSS.svg";
 import { useState } from 'react';
 export default function Skills() {
@@ -76,16 +73,6 @@ export default function Skills() {
         image: git,
       },
       {
-        id: 16,
-        name: "Java",
-        image: Java,
-      },
-      {
-        id: 18,
-        name: "Spring Boot",
-        image: spring,
-      },
-      {
         id: 48,
         name: "GrathQL",
         image: grath,
@@ -94,11 +81,6 @@ export default function Skills() {
         id: 148,
         name: "Next JS",
         image: nextjs,
-      },
-      {
-        id: 448,
-        name: "Mongoose JS",
-        image: mongodb,
       },
       {
         id: 444,
