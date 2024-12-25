@@ -1,11 +1,11 @@
 import './index.css'
 import me from '../../assets/me.png'
-import { FaCircle, FaDownload , FaGithub, FaPaperPlane } from 'react-icons/fa';
+import { FaCircle,  FaGithub, FaPaperPlane } from 'react-icons/fa';
 import { useEffect, useState } from 'react';
 import { IoReturnUpForward } from 'react-icons/io5';
+import DownLoadCV from '../download';
 export default function About() {
   const [text, setText] = useState(``);
-
   useEffect(() => {
    const interval =  setInterval(() => {
       if (window.innerWidth <= 720) {
@@ -51,10 +51,7 @@ export default function About() {
          {text}
        </p>
        <div>
-         <button>
-           <p>Baixar Resumo</p>
-           <FaDownload />
-         </button>
+        <DownLoadCV />
          <button onClick={() => {
            window.open("https://github.com/FranciscoDiakomas-01");
          }}>
