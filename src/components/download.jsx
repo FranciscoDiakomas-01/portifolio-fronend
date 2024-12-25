@@ -3,7 +3,7 @@ export default function DownLoadCV(){
 
     const download = () => {
         const link = document.createElement('a');
-        link.href = '../assets/cv.pdf';
+        link.href = '/public/cv.pdf';
         link.download = 'FranciscoDiakomas.pdf';
         link.click();
     }
